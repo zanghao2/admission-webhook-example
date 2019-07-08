@@ -5,10 +5,10 @@ metadata:
   labels:
     app: admission-webhook-example
 webhooks:
-  - name: required-labels.banzaicloud.com
+  - name: required-labels.qikqiak.com
     clientConfig:
       service:
-        name: admission-webhook-example-webhook-svc
+        name: admission-webhook-example-svc
         namespace: default
         path: "/validate"
       caBundle: ${CA_BUNDLE}
